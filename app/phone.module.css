@@ -1,0 +1,39 @@
+@media (max-width: 768px) {
+
+  #total {
+  
+  }
+
+  #containerBTN {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  #lightBTN, #linkBTN, #gitBTN{
+    margin: 0.5rem;
+    padding: 1.2rem;
+  }
+
+  #playBTN {
+    margin: 0.5rem;
+    padding: 15px;
+  }
+
+
+  #section {
+    margin: 0;
+    width: 100vw;
+  }
+  #noImage {
+    display: none;
+  }
+
+  #bottom {
+    padding: 1rem;
+    border-radius: 0px;
+  }
+
+}
