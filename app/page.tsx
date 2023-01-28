@@ -76,20 +76,18 @@ export default function Home() {
 
     const handleCompartilhar = () => {
       
-      const sectionn = document.getElementById('section');
-
-      if (sectionn) {
-        html2canvas(sectionn).then(canvas => {
-          const img = canvas.toDataURL("../public/pngwing.com (9).png");
-              const link = document.createElement("a");
-              link.download = "dragonball.png";
-              link.href = img;
-              link.click();
-          });
-      } else {
-        console.log('Elemento não encontrado')
-      }
-  }
+      const sectionn = document.querySelector('section');
+  
+        if (sectionn) {
+          html2canvas(sectionn).then(canvas => {
+            const img = canvas.toDataURL("../public/pngwing.com (9).png");
+                const link = document.createElement("a");
+                link.download = "dragonball.png";
+                link.href = img;
+                link.click();
+            });
+        }
+    }
   
   
   const handleTheme = () => {
@@ -115,7 +113,7 @@ export default function Home() {
     </div>
 
 
-  <section id={Styles.section} className={`${isSuperMode ? 'text-white flex flex-col justify-center items-center bg-purple-500 m-16 rounded-3xl h-[850px] place-content-between': 'text-white flex flex-col justify-center items-center bg-blue-500 m-16 rounded-3xl h-[850px] place-content-between'}`}>
+  <section   id={`${Styles.section}`} className={`${isSuperMode ? 'text-white flex flex-col justify-center items-center bg-purple-500 m-16 rounded-3xl h-[850px] place-content-between': 'text-white flex flex-col justify-center items-center bg-blue-500 m-16 rounded-3xl h-[850px] place-content-between'}section`}>
       <div className=' h-full flex flex-wrap justify-center items-center flex-col rounded-xl '>
  
     <div className='bg-yellow-500 rounded-xl text-center  items-center leading-8  md:w-1/2 p-4  drop-shadow-2xl'>
