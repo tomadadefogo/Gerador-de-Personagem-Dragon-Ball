@@ -80,7 +80,7 @@ export default function Home() {
   
         if (sectionn) {
           html2canvas(sectionn).then(canvas => {
-            const img = canvas.toDataURL("../public/pngwing.com (9).png");
+            const img = canvas.toDataURL("image/png");
                 const link = document.createElement("a");
                 link.download = "dragonball.png";
                 link.href = img;
@@ -116,28 +116,28 @@ export default function Home() {
 
   <section   id={`${Styles.section}`} className={`${isSuperMode ? 'text-white flex flex-col justify-center items-center bg-purple-500 m-16 rounded-3xl h-[850px] place-content-between': 'text-white flex flex-col justify-center items-center bg-blue-500 m-16 rounded-3xl h-[850px] place-content-between'}section`}>
       <div className=' h-full flex flex-wrap justify-center items-center flex-col rounded-xl '>
- 
+    {/* As IDs foram usadas para testar o cypress */}
     <div className='bg-yellow-500 rounded-xl text-center  items-center leading-8  md:w-1/2 p-4  drop-shadow-2xl'>
-            <h1 className='text-center text-red-500 font-bold text-5xl'>Poder</h1>
-            <p className='text-center text-2xl'>{selectedPower}</p>
+            <h1  id='pw'className='text-center text-red-500 font-bold text-5xl'>Poder</h1>
+            <p id='pwp'className='text-center text-2xl'>{selectedPower}</p>
 
-            <h1 className='text-center text-5xl text-red-500 font-bold'>Raça</h1>
-            <p className='text-center text-2xl'>{selectedRaça}</p>
+            <h1 id='rc' className='text-center text-5xl text-red-500 font-bold'>Raça</h1>
+            <p id='rcp' className='text-center text-2xl'>{selectedRaça}</p>
 
-            <h1 className='text-center text-5xl text-red-500 font-bold'>Universo</h1>
-            <p className='text-center text-2xl'>{selectedUni}</p>
+            <h1 id='un' className='text-center text-5xl text-red-500 font-bold'>Universo</h1>
+            <p id='unp' className='text-center text-2xl'>{selectedUni}</p>
 
-            <h1 className='text-center text-5xl text-red-500 font-bold'>Traços</h1>
-            <p className='text-center text-2xl'>{selectedTra}</p>
+            <h1 id='tr' className='text-center text-5xl text-red-500 font-bold'>Traços</h1>
+            <p id='trp' className='text-center text-2xl'>{selectedTra}</p>
 
-            <h1 className='text-center text-5xl text-red-500 font-bold'>Acessório</h1>
-            <p className='text-center text-2xl'>{selectedAce}</p>
+            <h1 id='ac' className='text-center text-5xl text-red-500 font-bold'>Acessório</h1>
+            <p id='acp' className='text-center text-2xl'>{selectedAce}</p>
 
-            <h1 className='text-center text-5xl text-red-500 font-bold'>Presente</h1>
-            <p className='text-center text-2xl'>{selectedPre}</p>
+            <h1 id='pr' className='text-center text-5xl text-red-500 font-bold'>Presente</h1>
+            <p id='prp' className='text-center text-2xl'>{selectedPre}</p>
     </div>
       
-        <Image id={Styles.noImage} className={`${isSuperMode ? 'mx-24 mt-8' : ' ml-2'} h-full object-contain  md:w-1/2`}
+        <Image id={Styles.noImage} className={` ${isSuperMode ? 'mx-24 mt-8' : ' ml-2'} h-full object-contain  md:w-1/2 imgtest`}
   src={isSuperMode ? Bills : Dragon}
   alt="Dragon Ball" />
     
@@ -146,7 +146,8 @@ export default function Home() {
         <button className={`${isSuperMode ? 'bg-black drop-shadow-2xl text-white  p-2 mb-48 rounded-lg w-1/3 md:w-1/5' :'bg-red-500 text-black drop-shadow-2xl hover:text-white  p-2 mb-48 rounded-lg w-1/3 md:w-1/5'}Share`} onClick={handleCompartilhar}>Compartilhar</button>
 
    </section>
-      <div className='flex flex-wrap justify-center items-center'>
+   {/* A ID 'testinfo' foi usada para testar o cypress */}
+      <div id='testinfo'className='flex flex-wrap justify-center items-center'>
           <h3  id={Styles.bottom} className={`${isSuperMode ? 'text-emerald bg-purple-600  rounded mt-[-50px]':'bg-red-500  rounded  text-white  mt-[-50px] '} flex flex-wrap justify-center items-center`}  >* Para melhor exibição, recomendamos que tire um printScreen da tela.</h3>
       </div>
 </div> 
