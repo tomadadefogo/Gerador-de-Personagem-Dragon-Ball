@@ -143,7 +143,7 @@ export default function Home() {
     
       </div>
       {/* A classe Share foi usada para testar o cypress */}
-        <button className={`${isSuperMode ? 'bg-black drop-shadow-2xl text-white  p-2 mb-48 rounded-lg w-1/3 md:w-1/5' :'bg-red-500 text-black drop-shadow-2xl hover:text-white  p-2 mb-48 rounded-lg w-1/3 md:w-1/5'}Share`} onClick={handleCompartilhar}>Compartilhar</button>
+        <button id='share' className={` ${isSuperMode ? 'bg-black drop-shadow-2xl text-white  p-2 mb-48 rounded-lg w-1/3 md:w-1/5' :'bg-red-500 text-black drop-shadow-2xl hover:text-white  p-2 mb-48 rounded-lg w-1/3 md:w-1/5'}`} onClick={handleCompartilhar}>Compartilhar</button>
 
    </section>
    {/* A ID 'testinfo' foi usada para testar o cypress */}
