@@ -99,7 +99,7 @@ export default function Home() {
    <div id={Styles.total} className={`${isSuperMode ? 'bg-black': ''}`}>   
 
     <div id={Styles.containerBTN} className='flex justify-center items-center p-8 content-between space-x-16 '>
-      <button id={Styles.lightBTN} className='bg-red-500 p-10 mr-4 rounded text-center hover:text-white drop-shadow-2xl'  onClick={handleTheme}>
+      <button id={Styles.lightBTN} className='bg-red-500 p-10 mr-4 rounded text-center hover:text-white drop-shadow-2xl light'  onClick={handleTheme}>
       <FaLightbulb className='text-white' />
         </button>
         <button id={Styles.playBTN} className='bg-red-500 p-[28px] mr-4 rounded text-center hover:text-white drop-shadow-2xl' onClick={handleClick}
