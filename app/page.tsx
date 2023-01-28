@@ -94,11 +94,12 @@ export default function Home() {
     setIsSuperMode(!isSuperMode);
   };
 
-  return (
+  return ( 
   <>
    <div id={Styles.total} className={`${isSuperMode ? 'bg-black': ''}`}>   
-
-    <div id={Styles.containerBTN} className='flex justify-center items-center p-8 content-between space-x-16 '>
+          
+    <div id={Styles.containerBTN} className='flex justify-center items-center p-8 content-between space-x-16 '> 
+    {/* As classes light, play, link e git foram usadas para testar o cypress */}
       <button id={Styles.lightBTN} className='bg-red-500 p-10 mr-4 rounded text-center hover:text-white drop-shadow-2xl light'  onClick={handleTheme}>
       <FaLightbulb className='text-white' />
         </button>
@@ -106,7 +107,7 @@ export default function Home() {
         >Play</button>
         <Link id={Styles.linkBTN}  className='bg-red-500 p-8 mr-4 rounded text-center hover:text-white drop-shadow-2xl link' target='_blank' href='https://www.linkedin.com/in/pedro-luiz-277055167/'>
         <FaLinkedinIn />
-      </Link>
+      </Link> 
       <Link id={Styles.gitBTN} className='bg-red-500 p-10 mr-4 rounded text-center text-white drop-shadow-2xl git' target='_blank' href='https://github.com/tomadadefogo'>
         <DiGithubBadge />
       </Link>
@@ -141,7 +142,8 @@ export default function Home() {
   alt="Dragon Ball" />
     
       </div>
-        <button className={`${isSuperMode ? 'bg-black drop-shadow-2xl text-white  p-2 mb-48 rounded-lg w-1/3 md:w-1/5' :'bg-red-500 text-black drop-shadow-2xl hover:text-white  p-2 mb-48 rounded-lg w-1/3 md:w-1/5'}`} onClick={handleCompartilhar}>Compartilhar</button>
+      {/* A classe Share foi usada para testar o cypress */}
+        <button className={`${isSuperMode ? 'bg-black drop-shadow-2xl text-white  p-2 mb-48 rounded-lg w-1/3 md:w-1/5' :'bg-red-500 text-black drop-shadow-2xl hover:text-white  p-2 mb-48 rounded-lg w-1/3 md:w-1/5'}Share`} onClick={handleCompartilhar}>Compartilhar</button>
 
    </section>
       <div className='flex flex-wrap justify-center items-center'>
@@ -149,5 +151,5 @@ export default function Home() {
       </div>
 </div> 
     </>
-  )
+  ) 
 }
