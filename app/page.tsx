@@ -102,12 +102,12 @@ export default function Home() {
       <button id={Styles.lightBTN} className='bg-red-500 p-10 mr-4 rounded text-center hover:text-white drop-shadow-2xl light'  onClick={handleTheme}>
       <FaLightbulb className='text-white' />
         </button>
-        <button id={Styles.playBTN} className='bg-red-500 p-[28px] mr-4 rounded text-center hover:text-white drop-shadow-2xl' onClick={handleClick}
+        <button id={Styles.playBTN} className='bg-red-500 p-[28px] mr-4 rounded text-center hover:text-white drop-shadow-2xl play' onClick={handleClick}
         >Play</button>
-        <Link id={Styles.linkBTN}  className='bg-red-500 p-8 mr-4 rounded text-center hover:text-white drop-shadow-2xl' target='_blank' href='https://www.linkedin.com/in/pedro-luiz-277055167/'>
+        <Link id={Styles.linkBTN}  className='bg-red-500 p-8 mr-4 rounded text-center hover:text-white drop-shadow-2xl link' target='_blank' href='https://www.linkedin.com/in/pedro-luiz-277055167/'>
         <FaLinkedinIn />
       </Link>
-      <Link id={Styles.gitBTN} className='bg-red-500 p-10 mr-4 rounded text-center text-white drop-shadow-2xl' target='_blank' href='https://github.com/tomadadefogo'>
+      <Link id={Styles.gitBTN} className='bg-red-500 p-10 mr-4 rounded text-center text-white drop-shadow-2xl git' target='_blank' href='https://github.com/tomadadefogo'>
         <DiGithubBadge />
       </Link>
     </div>

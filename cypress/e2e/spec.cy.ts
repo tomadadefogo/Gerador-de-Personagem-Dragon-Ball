@@ -24,6 +24,9 @@ describe('Dragon Ball Character Generator', () => {
   it('Button/Link Toggle Test' ,()=> {
 
     cy.wait(2000); // espera 1 segundo antes de continuar
-    cy.get("#playBTN").click();
+    cy.get('.light').click();
+    cy.get('.play').click();
+    cy.get('.link').click();
+    cy.get('.git').click();
   })
 })
