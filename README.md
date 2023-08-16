@@ -1,19 +1,60 @@
-Gerador de Personagem Dragon Ball
-Esse projeto foi desenvolvido com o objetivo de gerar atributos aleatórios do universo de Dragon Ball. Ele foi construído usando as tecnologias Next.js 13, TypeScript e Tailwind.
 
-Funcionalidades
-- Botão de "play" que gera de forma aleatória os atributos do personagem, como poder, raça, universo, treinador, acessório e preparação.
-- Botão de "light mode" que permite alternar entre o modo claro e escuro.
-Como testar
-Se você deseja testar o código online, pode acessar o link: (https://gerador-de-personagem-dragon-ball.vercel.app.)
+# Gerador de personagem - Dragon Ball
 
-Como contribuir
-Se você deseja contribuir com o projeto, siga os passos abaixo:
+Dragon ball sempre estará presente na minha memoria. Dito isso fiz um gerador de personagem com caracteristicas do universo dragon ball, você vai pode se divertir com seus amigos nessa roleta.
 
-Faça um fork desse repositório para sua conta no GitHub.
-Crie uma nova branch com a sua contribuição (git checkout -b minha-contribuicao)
-Faça as alterações necessárias e faça um commit (git commit -am 'Adicionando minha contribuição')
-Faça o push para a branch (git push origin minha-contribuicao)
-Crie um pull request para que sua contribuição seja incluída no projeto.
-Licença
-Esse projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+## Funcionalidades
+
+- Você pode fazer salvar o preset que caiu fazendo download.
+- Mudança de tema ( dark e light mode).
+
+
+
+## Stack utilizada
+
+Nextjs, tailWind, Cypress e typeScript
+
+
+## Rodando localmente
+
+Clone o projeto
+
+```bash
+  git clone https://github.com/tomadadefogo/Gerador-de-Personagem-Dragon-Ball
+```
+
+Entre no diretório do projeto
+
+
+Instale as dependências
+
+```bash
+  npm install
+```
+
+Inicie o servidor
+
+```bash
+  npm run dev
+```
+
+
+## Licença
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+## 🔗 Links
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pedro-luiz-277055167/)
+
+
+
+## Contribuindo
+
+Se deseja contribuir com o projeto:
+
+Faça um fork do repositório e crie sua branch.
+Faça as alterações e dê o push.
+Abra um pull request. Todas as contribuições para deixar o código mais limpo e/ou performático serão muito bem-vindas.
+
